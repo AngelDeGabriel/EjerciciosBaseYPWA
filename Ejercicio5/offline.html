@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102a43">
+    <title>Sin conexión | Conecta+</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #102a43;
+        background: #f5f8fb;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        display: grid;
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        padding: 24px;
+        place-items: center;
+      }
+
+      main { width: min(100%, 600px); }
+
+      .brand {
+        margin: 0 0 72px;
+        font-size: 1.35rem;
+        font-weight: 800;
+        letter-spacing: -0.06em;
+      }
+
+      .brand span,
+      .eyebrow { color: #16a085; }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: clamp(2.8rem, 9vw, 5rem);
+        line-height: 1.02;
+        letter-spacing: -0.07em;
+      }
+
+      .message {
+        margin: 0;
+        color: #52667a;
+        font-size: 1.08rem;
+        line-height: 1.75;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 18px;
+        margin-top: 30px;
+      }
+
+      button,
+      .home {
+        min-height: 48px;
+        padding: 13px 18px;
+        border: 0;
+        border-radius: 7px;
+        font: inherit;
+        font-size: 0.92rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button {
+        color: #fff;
+        background: #102a43;
+      }
+
+      .home { color: #12836f; }
+
+      button:focus-visible,
+      .home:focus-visible {
+        outline: 3px solid #16a085;
+        outline-offset: 4px;
+      }
+
+      .note {
+        margin-top: 58px;
+        padding-top: 18px;
+        border-top: 1px solid #dce5ed;
+        color: #718397;
+        font-size: 0.84rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="offline-card">
+      <p class="brand">Conecta<span>+</span></p>
+      <p class="eyebrow">Modo Sin Conexión</p>
+      <h1>No hay internet por aquí.</h1>
+      <p class="message">
+        Esta página todavía no está guardada en tu dispositivo. Comprueba tu
+        conexión y vuelve a intentarlo; mientras tanto, puedes regresar al inicio.
+      </p>
+      <div class="actions">
+        <button type="button" onclick="window.location.reload()">Intentar de nuevo</button>
+        <a class="home" href="./">Ir al inicio</a>
+      </div>
+      <p class="note">Las páginas que ya hayas visitado pueden seguir disponibles sin conexión.</p>
+    </main>
+  </body>
+</html>

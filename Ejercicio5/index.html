@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102a43">
+    <title>Experiencia sin conexión</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Inicio">Conecta<span>+</span></a>
+        <p class="connection" id="connection-status" role="status" aria-live="polite">
+          <span class="connection__dot" aria-hidden="true"></span>
+          <span id="connection-label">Comprobando conexión…</span>
+        </p>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Tu espacio, estés donde estés</p>
+        <h1 id="hero-title">La conexión no siempre está disponible.<br><span>Tu experiencia sí.</span></h1>
+        <p class="hero__text">
+          Esta página se puede abrir sin internet. Si visitas una página que no
+          está guardada y no hay conexión, verás nuestra vista de Modo Sin Conexión.
+        </p>
+        <a class="button" href="./pagina-no-guardada">
+          Probar una página no guardada
+          <span aria-hidden="true">→</span>
+        </a>
+        <p class="hint">Desconecta la red e intenta abrir el enlace para probar el fallback.</p>
+      </section>
+
+      <section class="features" aria-label="Cómo funciona">
+        <article class="feature">
+          <span class="feature__number">01</span>
+          <h2>Primero, la red</h2>
+          <p>Las páginas se solicitan normalmente para mostrar siempre el contenido más reciente.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__number">02</span>
+          <h2>Después, la caché</h2>
+          <p>Si falla la conexión, se recupera la página guardada cuando ya la visitaste.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__number">03</span>
+          <h2>Una alternativa útil</h2>
+          <p>Si no existe una copia local, aparece una vista clara para volver a intentarlo.</p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>Una experiencia preparada para seguir contigo.</span>
+        <a href="./offline.html">Ver la vista sin conexión</a>
+      </footer>
+    </main>
+  </body>
+</html>
