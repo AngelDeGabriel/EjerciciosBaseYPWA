@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Nébula — espacio de trabajo",
+  "short_name": "Nébula",
+  "description": "Proyectos, equipo y actividades en un solo espacio.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone"],
+  "background_color": "#f5f6fa",
+  "theme_color": "#101b36",
+  "categories": ["productivity"],
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101b36" />
+    <meta
+      name="description"
+      content="Nébula reúne tus proyectos, equipo y próximas actividades en un solo espacio."
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/icon-192.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Nébula — Espacio de trabajo</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="app-shell">
+      <button class="sidebar-backdrop" type="button" aria-label="Cerrar menú" hidden></button>
+      <aside class="sidebar" id="menu-principal" aria-label="Menú principal">
+        <a class="brand" href="#inicio" aria-label="Nébula, ir al inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 2.5 19 13l10.5 3-10.5 3L16 29.5 13 19l-10.5-3L13 13 16 2.5Z" fill="currentColor" />
+              <circle cx="25.5" cy="7" r="2.5" fill="#FFBD98" />
+            </svg>
+          </span>
+          <span class="brand-name">nébula<span>.</span></span>
+        </a>
+
+        <p class="nav-heading">ESPACIO DE TRABAJO</p>
+        <nav class="primary-nav" aria-label="Navegación principal">
+          <a class="nav-link is-active" href="#inicio" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2" /><rect x="13" y="3" width="8" height="5" rx="2" /><rect x="13" y="10" width="8" height="11" rx="2" /><rect x="3" y="13" width="8" height="8" rx="2" /></svg>
+            <span>Resumen</span>
+          </a>
+          <a class="nav-link" href="#proyectos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v8a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-10Z" /><path d="M3.5 10h17" /></svg>
+            <span>Proyectos</span>
+            <span class="nav-count">03</span>
+          </a>
+          <a class="nav-link" href="#agenda">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3" /><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" /></svg>
+            <span>Agenda</span>
+          </a>
+          <a class="nav-link" href="#equipo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M10 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM20 8v6m3-3h-6" /></svg>
+            <span>Equipo</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="workspace-card">
+            <span class="workspace-avatar" aria-hidden="true">N</span>
+            <span class="workspace-copy"><strong>Estudio Norte</strong><small>Plan gratuito</small></span>
+            <svg class="workspace-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+          </div>
+          <p class="sidebar-footnote">Hecho para avanzar <span aria-hidden="true">✳</span></p>
+        </div>
+      </aside>
+
+      <header class="topbar">
+        <button
+          class="menu-toggle icon-button"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <div class="breadcrumb"><span>Estudio Norte</span><span class="breadcrumb-divider">/</span><strong>Resumen</strong></div>
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4.2 4.2" /></svg>
+          <input id="project-search" type="search" placeholder="Buscar un proyecto..." aria-label="Buscar un proyecto" />
+          <kbd>⌘ K</kbd>
+        </label>
+        <span class="topbar-divider" aria-hidden="true"></span>
+        <div class="profile" aria-label="Sesión de Alex Rivera">
+          <span class="profile-avatar" aria-hidden="true">AR</span>
+          <span class="profile-name">Alex Rivera</span>
+          <svg class="profile-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+        </div>
+      </header>
+
+      <main class="main-content" id="contenido">
+        <section class="welcome-row" id="inicio" aria-labelledby="welcome-title">
+          <div>
+            <p class="eyebrow" id="today-date">TU ESPACIO, EN UN VISTAZO</p>
+            <h1 id="welcome-title">Buenos días, Alex <span aria-hidden="true">✳</span></h1>
+            <p class="welcome-copy">Aquí tienes lo que está pasando con tu equipo.</p>
+          </div>
+          <a class="button button-primary" href="#proyectos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            Ver proyectos
+          </a>
+        </section>
+
+        <section class="stats-grid" aria-label="Resumen de actividad">
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-label">Proyectos activos</span><span class="stat-icon icon-lilac"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v8a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-10Z" /></svg></span></div>
+            <div class="stat-value">03 <span class="stat-change">+1 este mes</span></div>
+            <p class="stat-caption">En marcha ahora mismo</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-label">Tareas completadas</span><span class="stat-icon icon-mint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg></span></div>
+            <div class="stat-value">28 <span class="stat-change">+12%</span></div>
+            <p class="stat-caption">Durante esta semana</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-label">En el equipo</span><span class="stat-icon icon-peach"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M10 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM20 8v6m3-3h-6" /></svg></span></div>
+            <div class="stat-value">06 <span class="stat-change">+2 nuevos</span></div>
+            <p class="stat-caption">Personas colaborando</p>
+          </article>
+        </section>
+
+        <div class="dashboard-grid">
+          <section class="panel projects-panel" id="proyectos" aria-labelledby="projects-title">
+            <div class="panel-heading">
+              <div><p class="eyebrow">EN LO QUE ESTÁS TRABAJANDO</p><h2 id="projects-title">Tus proyectos</h2></div>
+              <span class="project-total">03 en total</span>
+            </div>
+            <div class="project-list" id="project-list">
+              <article class="project-card" data-search="identidad marca norte">
+                <div class="project-meta"><span class="project-symbol symbol-lilac">N</span><span class="project-tag tag-lilac">Diseño</span><span class="project-menu" aria-hidden="true">•••</span></div>
+                <h3>Identidad de marca</h3>
+                <p>Un nuevo lenguaje visual para Estudio Norte.</p>
+                <div class="progress-row"><span>Progreso</span><strong>78%</strong></div>
+                <div class="progress-track"><span class="progress-fill fill-lilac" style="width: 78%"></span></div>
+                <div class="project-footer"><div class="avatar-stack" aria-label="3 integrantes"><span class="mini-avatar mini-peach">AR</span><span class="mini-avatar mini-blue">MC</span><span class="mini-avatar mini-green">JL</span></div><span class="due-date"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="13" rx="2" /><path d="M7 2v4m6-4v4M3 8h14" /></svg> 14 oct</span></div>
+              </article>
+              <article class="project-card" data-search="sitio web café buen día">
+                <div class="project-meta"><span class="project-symbol symbol-peach">C</span><span class="project-tag tag-peach">Desarrollo</span><span class="project-menu" aria-hidden="true">•••</span></div>
+                <h3>Sitio web Café Buen Día</h3>
+                <p>Una experiencia digital para empezar bien.</p>
+                <div class="progress-row"><span>Progreso</span><strong>52%</strong></div>
+                <div class="progress-track"><span class="progress-fill fill-peach" style="width: 52%"></span></div>
+                <div class="project-footer"><div class="avatar-stack" aria-label="2 integrantes"><span class="mini-avatar mini-blue">MC</span><span class="mini-avatar mini-lilac">SP</span></div><span class="due-date"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="13" rx="2" /><path d="M7 2v4m6-4v4M3 8h14" /></svg> 18 oct</span></div>
+              </article>
+              <article class="project-card" data-search="campaña redes sociales">
+                <div class="project-meta"><span class="project-symbol symbol-mint">S</span><span class="project-tag tag-mint">Contenido</span><span class="project-menu" aria-hidden="true">•••</span></div>
+                <h3>Campaña de temporada</h3>
+                <p>Ideas frescas para las redes sociales.</p>
+                <div class="progress-row"><span>Progreso</span><strong>34%</strong></div>
+                <div class="progress-track"><span class="progress-fill fill-mint" style="width: 34%"></span></div>
+                <div class="project-footer"><div class="avatar-stack" aria-label="2 integrantes"><span class="mini-avatar mini-green">JL</span><span class="mini-avatar mini-peach">AR</span></div><span class="due-date"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="13" rx="2" /><path d="M7 2v4m6-4v4M3 8h14" /></svg> 24 oct</span></div>
+              </article>
+            </div>
+            <p class="empty-search" id="empty-search" hidden>No encontramos proyectos con esa búsqueda.</p>
+          </section>
+
+          <div class="side-panels">
+            <section class="panel agenda-panel" id="agenda" aria-labelledby="agenda-title">
+              <div class="panel-heading"><div><p class="eyebrow">LO QUE SIGUE</p><h2 id="agenda-title">Próximamente</h2></div><span class="agenda-sparkle" aria-hidden="true">✳</span></div>
+              <ol class="agenda-list">
+                <li><span class="agenda-date"><strong>10</strong><small>OCT</small></span><span class="agenda-event"><strong>Revisión de diseño</strong><small>09:30 · Identidad de marca</small></span><span class="event-dot dot-lilac" aria-hidden="true"></span></li>
+                <li><span class="agenda-date"><strong>12</strong><small>OCT</small></span><span class="agenda-event"><strong>Planificación semanal</strong><small>11:00 · Todo el equipo</small></span><span class="event-dot dot-peach" aria-hidden="true"></span></li>
+                <li><span class="agenda-date"><strong>14</strong><small>OCT</small></span><span class="agenda-event"><strong>Entrega de identidad</strong><small>16:00 · Identidad de marca</small></span><span class="event-dot dot-mint" aria-hidden="true"></span></li>
+              </ol>
+            </section>
+            <section class="team-card" id="equipo" aria-labelledby="team-title">
+              <span class="team-decoration" aria-hidden="true">✳</span>
+              <p class="eyebrow">MEJOR EN EQUIPO</p>
+              <h2 id="team-title">Las buenas ideas se hacen juntos.</h2>
+              <p>Invita a alguien y sigan creando.</p>
+              <div class="team-card-bottom"><div class="avatar-stack" aria-label="6 personas en el equipo"><span class="mini-avatar mini-peach">AR</span><span class="mini-avatar mini-blue">MC</span><span class="mini-avatar mini-green">JL</span><span class="mini-avatar mini-lilac">+3</span></div><span class="team-count">6 personas</span></div>
+            </section>
+          </div>
+        </div>
+        <footer class="page-footer"><span>Nébula <span aria-hidden="true">✳</span> tu espacio para avanzar.</span><span>Que tengas un gran día.</span></footer>
+      </main>
+    </div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
