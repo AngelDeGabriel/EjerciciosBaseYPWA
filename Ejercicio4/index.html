@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102a43">
+    <title>Cache-First · App Shell</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <img class="app-icon" src="./icon.svg" alt="" width="72" height="72">
+      <p class="eyebrow">Service Worker · Cache API</p>
+      <h1>App Shell listo</h1>
+      <p class="intro">
+        Los recursos estáticos se guardan durante la instalación y se sirven
+        primero desde la caché en las siguientes visitas.
+      </p>
+      <p class="status" id="status" role="status" aria-live="polite">
+        Comprobando soporte sin conexión…
+      </p>
+    </main>
+  </body>
+</html>
